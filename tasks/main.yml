@@ -1,0 +1,4 @@
+---
+# Composer role main tasks file
+
+- include: composer.yml

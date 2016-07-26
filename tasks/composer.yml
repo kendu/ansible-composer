@@ -1,0 +1,12 @@
+---
+# Composer tasks
+- name: Install packages
+  apt:
+      name: "curl"
+      state: latest
+      force: yes
+
+- name: Install composer
+  shell: curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+  args:
+      creates: /usr/local/bin/composer
